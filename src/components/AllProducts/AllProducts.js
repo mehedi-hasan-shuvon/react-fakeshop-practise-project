@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './AllProducts.css'
-const AllProducts = ({setCartCount}) => {
+const AllProducts = ({ setCartCount }) => {
 
     const [products, setProducts] = useState([]);
 
@@ -14,7 +14,7 @@ const AllProducts = ({setCartCount}) => {
     return (
         <div>
             <h1>All products</h1>
-            <div className="row container">
+            <div className="row container mx-auto">
                 {
                     products.map(product => <Product
                         key={product.id}
